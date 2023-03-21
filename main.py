@@ -40,9 +40,9 @@ while(True):
     if not thr1.is_alive():
         break
 
-print("\nRequests history:")
+print("\nThe requests history:")
 for i in range(len(request_history)):
     if request_history[i][2]>=0:
         print(f"{i+1}. A {request_history[i][0]} was sent to {request_history[i][1]} {request_history[i][2]} days forward at {request_history[i][3]}")
     else:
-        print(f"{i+1}. A {request_history[i][0]} was sent to {request_history[i][1]} {request_history[i][2]} days ago at {request_history[i][3]}")
+        print(f"{i+1}. A {request_history[i][0]} was sent to {request_history[i][1]} {-request_history[i][2]} days ago at {request_history[i][3]}")

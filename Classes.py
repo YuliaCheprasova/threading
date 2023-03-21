@@ -44,7 +44,7 @@ class time_machine():
         if mas[2] >= 0:
             print('I am sending a ', mas[0], ' to ', mas[1], ' ', str(mas[2]), ' days forward')
         else:
-            print('I am sending a ', mas[0], ' to ', mas[1], ' ', str(mas[2]), ' days ago')
+            print('I am sending a ', mas[0], ' to ', mas[1], ' ', str(-mas[2]), ' days ago')
 
 
 
